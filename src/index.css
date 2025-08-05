@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@utility mycontainer {
+  @apply mx-auto px-4 sm:px-6 lg:px-8 w-full max-w-[80vw];
+}
+
+
+/* Wrapper to control scrollbar visibility */
+.scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.scrollbar-visible {
+  scrollbar-width: thin;
+  scrollbar-color: #059669 #ecfdf5;
+}
+
+.scrollbar-visible::-webkit-scrollbar {
+  width: 8px;
+  transition: opacity 0.3s ease;
+}
+
+.scrollbar-visible::-webkit-scrollbar-track {
+  background: #ecfdf5;
+  border-radius: 10px;
+}
+
+.scrollbar-visible::-webkit-scrollbar-thumb {
+  background-color: #059669;
+  border-radius: 10px;
+  border: 2px solid #ecfdf5;
+}
+
+.scrollbar-visible::-webkit-scrollbar-thumb:hover {
+  background-color: #047857;
+}
+
+.scrollbar-visible::-webkit-scrollbar {
+  opacity: 0;
+}
+
+.group:hover .scrollbar-visible::-webkit-scrollbar {
+  opacity: 1;
+}
+
+
+
+
+
+

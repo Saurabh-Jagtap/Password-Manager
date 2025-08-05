@@ -1,0 +1,43 @@
+/* src/components/CopyIcon.css */
+
+.icon-wrapper {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+.copy-icon,
+.check-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.4s ease, transform 0.2s ease;
+}
+
+.copy-icon:hover {
+  transform: scale(1.1);
+}
+
+.copy-icon .back {
+  stroke: #b0b0b0;
+  transform: translate(2px, 2px);
+  transition: transform 0.3s ease;
+}
+
+.copy-icon:hover .back {
+  transform: translate(1px, 1px);
+}
+
+.check-icon {
+  opacity: 0;
+}
+
+.check-icon.visible {
+  opacity: 1;
+}
+
+.copy-icon.hidden {
+  opacity: 0;
+}
